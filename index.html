@@ -1,1 +1,280 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <meta name="theme-color" content="#05090d">
+
+    <title>Lelosandi Properties</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-bar">
+
+        <div class="brand">
+            <img src="images-2.jpg" alt="Lelosandi Properties Logo">
+        </div>
+
+        <button class="header-whatsapp" onclick="openWhatsApp()">
+            <span>WhatsApp</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-glow glow-blue"></div>
+            <div class="hero-glow glow-green"></div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    LELOSANDI PROPERTIES
+                </span>
+
+                <h1>
+                    Your property journey
+                    <span>starts here.</span>
+                </h1>
+
+                <p>
+                    Whether you're looking to buy, rent, finance,
+                    evaluate a property or get assistance with FLISP,
+                    we're here to help.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="scrollToServices()"
+                >
+                    Get Started
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICE SECTION -->
+        <section class="services-section" id="services">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    PROPERTY ASSISTANT
+                </span>
+
+                <h2>
+                    How can we help you?
+                </h2>
+
+                <p>
+                    Choose what you need and we'll guide you
+                    through the next step.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <!-- BUY -->
+                <button
+                    class="service-card"
+                    onclick="openService('buy')"
+                >
+                    <div class="service-icon blue">
+                        🏠
+                    </div>
+
+                    <div>
+                        <h3>Buy a Property</h3>
+                        <p>Tell us what you're looking for.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </button>
+
+
+                <!-- RENT -->
+                <button
+                    class="service-card"
+                    onclick="openService('rent')"
+                >
+                    <div class="service-icon green">
+                        🔑
+                    </div>
+
+                    <div>
+                        <h3>Rent a Property</h3>
+                        <p>Find a home that suits your needs.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </button>
+
+
+                <!-- HOME LOAN -->
+                <button
+                    class="service-card"
+                    onclick="openService('loan')"
+                >
+                    <div class="service-icon blue">
+                        💰
+                    </div>
+
+                    <div>
+                        <h3>Home Loan Assistance</h3>
+                        <p>Get help with your home finance enquiry.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </button>
+
+
+                <!-- EVALUATION -->
+                <button
+                    class="service-card"
+                    onclick="openService('evaluation')"
+                >
+                    <div class="service-icon green">
+                        📊
+                    </div>
+
+                    <div>
+                        <h3>Property Evaluation</h3>
+                        <p>Request assistance with your property.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </button>
+
+
+                <!-- FLISP -->
+                <button
+                    class="service-card"
+                    onclick="openService('flisp')"
+                >
+                    <div class="service-icon blue">
+                        🏡
+                    </div>
+
+                    <div>
+                        <h3>FLISP Assistance</h3>
+                        <p>Find out more about the application process.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </button>
+
+
+                <!-- CONTACT -->
+                <button
+                    class="service-card"
+                    onclick="openService('contact')"
+                >
+                    <div class="service-icon green">
+                        💬
+                    </div>
+
+                    <div>
+                        <h3>Speak to Lelosandi</h3>
+                        <p>Have a question? Let's talk.</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRUST SECTION -->
+        <section class="trust-section">
+
+            <div class="trust-card">
+
+                <span class="section-label">
+                    LELOSANDI PROPERTIES
+                </span>
+
+                <h2>
+                    Let's find the right
+                    property solution for you.
+                </h2>
+
+                <p>
+                    Start your enquiry today and our team
+                    can assist you with the next step.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    onclick="openWhatsApp()"
+                >
+                    Chat on WhatsApp
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SERVICE MODAL -->
+    <div
+        class="modal"
+        id="serviceModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" onclick="closeService()"></div>
+
+        <div class="modal-box">
+
+            <button
+                class="close-btn"
+                onclick="closeService()"
+            >
+                ×
+            </button>
+
+            <div id="formContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <button
+        class="floating-whatsapp"
+        onclick="openWhatsApp()"
+        aria-label="Contact Lelosandi on WhatsApp"
+    >
+        <span>☏</span>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
