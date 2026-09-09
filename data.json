@@ -1,1 +1,37 @@
 
+{
+  "company": {
+    "name": "Lelosandi Properties",
+    "tagline": "Your property journey starts here",
+    "logo": "images-2.jpg"
+  },
+
+  "services": [
+    {
+      "id": "buy",
+      "title": "Buy a Property",
+      "description": "Find a property that suits your needs, lifestyle and budget."
+    },
+    {
+      "id": "rent",
+      "title": "Rent a Property",
+      "description": "Find a comfortable place to call home."
+    },
+    {
+      "id": "loan",
+      "title": "Home Loan Assistance",
+      "description": "Get guidance through the home-loan process."
+    },
+    {
+      "id": "evaluation",
+      "title": "Property Evaluation",
+      "description": "Get assistance understanding the potential value of your property."
+    },
+    ],
+
+  "properties": [],
+
+  "contact": {
+    "whatsapp": "27813460090"
+  }
+}
