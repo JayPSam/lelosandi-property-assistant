@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <meta
+        name="description"
+        content="Lelosandi Properties — professional assistance with buying, renting, home loans, property evaluations and FLISP."
+    >
+
+    <meta name="theme-color" content="#04070b">
+
+    <title>Lelosandi Properties | Your Property Journey Starts Here</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-bar">
+
+        <a
+            class="brand"
+            href="#"
+            aria-label="Lelosandi Properties home"
+        >
+            <img
+                src="images-2.jpg"
+                alt="Lelosandi Properties"
+            >
+        </a>
+
+        <button
+            class="header-whatsapp"
+            type="button"
+            onclick="openWhatsApp()"
+            aria-label="Chat with Lelosandi Properties on WhatsApp"
+        >
+            <span>WhatsApp</span>
+        </button>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO -->
+        <section
+            class="hero"
+            aria-labelledby="hero-title"
+        >
+
+            <div
+                class="hero-glow glow-blue"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-glow glow-green"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    LELOSANDI PROPERTIES
+                </span>
+
+                <h1 id="hero-title">
+                    Your property journey
+                    <span>starts here.</span>
+                </h1>
+
+                <p>
+                    Whether you're buying, renting, securing home finance,
+                    evaluating a property or exploring FLISP, Lelosandi
+                    Properties is here to help you take the next step with
+                    confidence.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    type="button"
+                    onclick="scrollToServices()"
+                >
+                    Get Started
+                    <span aria-hidden="true">→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+        <section
+            class="services-section"
+            id="services"
+            aria-labelledby="services-title"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    PROPERTY ASSISTANT
+                </span>
+
+                <h2 id="services-title">
+                    What can we help you with?
+                </h2>
+
+                <p>
+                    Choose the service that best matches what you need.
+                    We'll guide you from there.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <!-- BUY -->
+                <button
+                    class="service-card"
+                    type="button"
+                    onclick="openService('buy')"
+                    aria-label="Start a property buying enquiry"
+                >
+
+                    <div
+                        class="service-icon blue"
+                        aria-hidden="true"
+                    >
+                        🏠
+                    </div>
+
+                    <div>
+                        <h3>Buy a Property</h3>
+                        <p>
+                            Tell us what you're looking for and let us
+                            help you take the next step.
+                        </p>
+                    </div>
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- RENT -->
+                <button
+                    class="service-card"
+                    type="button"
+                    onclick="openService('rent')"
+                    aria-label="Start a property rental enquiry"
+                >
+
+                    <div
+                        class="service-icon green"
+                        aria-hidden="true"
+                    >
+                        🔑
+                    </div>
+
+                    <div>
+                        <h3>Rent a Property</h3>
+                        <p>
+                            Find a home that fits your needs, lifestyle
+                            and budget.
+                        </p>
+                    </div>
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- HOME LOAN -->
+                <button
+                    class="service-card"
+                    type="button"
+                    onclick="openService('loan')"
+                    aria-label="Ask about home loan assistance"
+                >
+
+                    <div
+                        class="service-icon blue"
+                        aria-hidden="true"
+                    >
+                        💰
+                    </div>
+
+                    <div>
+                        <h3>Home Loan Assistance</h3>
+                        <p>
+                            Get guidance with your home-finance enquiry
+                            and the next steps.
+                        </p>
+                    </div>
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- EVALUATION -->
+                <button
+                    class="service-card"
+                    type="button"
+                    onclick="openService('evaluation')"
+                    aria-label="Request a property evaluation"
+                >
+
+                    <div
+                        class="service-icon green"
+                        aria-hidden="true"
+                    >
+                        📊
+                    </div>
+
+                    <div>
+                        <h3>Property Evaluation</h3>
+                        <p>
+                            Start an enquiry about understanding your
+                            property's potential value.
+                        </p>
+                    </div>
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- FLISP -->
+                <button
+                    class="service-card"
+                    type="button"
+                    onclick="openService('flisp')"
+                    aria-label="Ask about FLISP assistance"
+                >
+
+                    <div
+                        class="service-icon blue"
+                        aria-hidden="true"
+                    >
+                        🏡
+                    </div>
+
+                    <div>
+                        <h3>FLISP Assistance</h3>
+                        <p>
+                            Get information and guidance about the
+                            FLISP process.
+                        </p>
+                    </div>
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- CONTACT -->
+                <button
+                    class="service-card"
+                    type="button"
+                    onclick="openService('contact')"
+                    aria-label="Speak to Lelosandi Properties"
+                >
+
+                    <div
+                        class="service-icon green"
+                        aria-hidden="true"
+                    >
+                        💬
+                    </div>
+
+                    <div>
+                        <h3>Speak to Lelosandi</h3>
+                        <p>
+                            Have a question or need guidance? Start
+                            the conversation directly.
+                        </p>
+                    </div>
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section
+            class="trust-section"
+            aria-labelledby="trust-title"
+        >
+
+            <div class="trust-card">
+
+                <span class="section-label">
+                    LELOSANDI PROPERTIES
+                </span>
+
+                <h2 id="trust-title">
+                    Let's find the right
+                    property solution for you.
+                </h2>
+
+                <p>
+                    Tell us what you're looking for and start a direct
+                    conversation with Lelosandi Properties.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    type="button"
+                    onclick="openWhatsApp()"
+                    aria-label="Chat with Lelosandi Properties on WhatsApp"
+                >
+                    Chat on WhatsApp
+                    <span aria-hidden="true">→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SERVICE MODAL -->
+    <div
+        class="modal"
+        id="serviceModal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Lelosandi Properties enquiry"
+    >
+
+        <div
+            class="modal-overlay"
+            onclick="closeService()"
+            aria-hidden="true"
+        ></div>
+
+        <div class="modal-box">
+
+            <button
+                class="close-btn"
+                type="button"
+                onclick="closeService()"
+                aria-label="Close enquiry"
+            >
+                ×
+            </button>
+
+            <div id="formContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FLOATING WHATSAPP -->
+    <button
+        class="floating-whatsapp"
+        type="button"
+        onclick="openWhatsApp()"
+        aria-label="Contact Lelosandi Properties on WhatsApp"
+    >
+        <span aria-hidden="true">☏</span>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
