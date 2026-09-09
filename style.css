@@ -773,3 +773,43 @@ body {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* =========================
+   MOBILE POLISH — FINAL
+   ========================= */
+
+@media (max-width: 650px) {
+
+    /* Keep the hero tighter so the CTA doesn't sit above a large empty area. */
+    .hero {
+        min-height: 0;
+        padding-top: 48px;
+        padding-bottom: 38px;
+    }
+
+    .hero h1 {
+        margin-bottom: 18px;
+    }
+
+    .hero p {
+        margin-bottom: 24px;
+    }
+
+    /* Keep the floating WhatsApp control clear of section headings. */
+    .section-heading {
+        padding-right: 72px;
+    }
+
+    .section-heading h2 {
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.08;
+    }
+
+    .floating-whatsapp {
+        width: 54px;
+        height: 54px;
+        right: 14px;
+        bottom: 14px;
+    }
+}
